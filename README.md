@@ -1,6 +1,11 @@
 # Environment Variables
 
 | ENV | Values | Description |
+
+
+
+
+
 | --------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | MODE | DEV, PROD | This is the mode of running the application. There are 2 modes available. DEV for the Development mode and PROD for the production mode. Certain settings will be changed according to the mode. Such as in the PROD mode, mutation will run asynchronously and synchronously otherwise. Same applies to DEBUG, it will be OFF in PROD and TRUE otherwise. |
 | DB_ENGINE | django.db.backends.postgresql, mssql | Currently openIMIS supports 2 databases, as the values suggested, postgres and mssql. |
