@@ -39,4 +39,4 @@ WORKDIR /openimis-be/openIMIS
 RUN NO_DATABASE=True python manage.py compilemessages -x zh_Hans
 RUN NO_DATABASE=True python manage.py collectstatic --clear --noinput
 
-ENTRYPOINT ["/openimis-be/script/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/openimis-be/script/entrypoint.sh"]
