@@ -34,11 +34,11 @@
         },
         {
             "name": "product",
-            "pip": "git+https://github.com/openimis/openimis-be-product_py.git@develop#egg=openimis-be-product"
+            "pip": "git+https://github.com/habtec/openimis-be-product_py.git@develop#egg=openimis-be-product"
         },
         {
             "name": "insuree",
-            "pip": "git+https://github.com/openimis/openimis-be-insuree_py.git@develop#egg=openimis-be-insuree"
+            "pip": "git+https://github.com/habtec/openimis-be-insuree_py.git@develop#egg=openimis-be-insuree"
         },
         {
             "name": "policy",
@@ -58,7 +58,7 @@
         },
         {
             "name": "claim",
-            "pip": "git+https://github.com/openimis/openimis-be-claim_py.git@develop#egg=openimis-be-claim"
+            "pip": "git+https://github.com/habtec/openimis-be-claim_py.git@develop#egg=openimis-be-claim"
         },
         {
             "name": "claim_batch",
