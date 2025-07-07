@@ -2,6 +2,9 @@
 Follow these steps to set up the openIMIS backend on your computer:
 1.  **Download the Code**
     -   Clone the repository to your computer. This creates a folder called openimis-be_py.
+      ```sh
+    git clone https://github.com/HABTec/openimis-be_py.git
+    ```
 2.  **Navigate to the Project Folder**
     -   Open a terminal and go to the openimis-be_py folder: 
     ```sh
