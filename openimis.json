@@ -1,6 +1,10 @@
 {
     "modules": [
         {
+            "name": "membership",
+            "pip": "git+https://github.com/habtec/openimis-be-membership_py.git@develop#egg=openimis-be-membership"
+        },
+        {
             "name": "core",
             "pip": "git+https://github.com/habtec/openimis-be-core_py.git@develop#egg=openimis-be-core"
         },
