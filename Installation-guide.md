@@ -114,3 +114,54 @@ Follow these steps to modify an existing openIMIS backend module, such as openim
     -   This links the local module to your openIMIS backend, so any changes you make to the module are automatically reflected (live updates).
 
 Now, the openIMIS backend will use your local module changes for development and testing!
+
+
+
+#  Guide to Adding Creating Membership Type Feature working.
+1. Go into the openimis-be_py project directory and uninstall the current product module by running:
+        pip uninstall openimis-be-product_py
+    
+Once uninstalled, move to the openimis-be-product_py directory, switch to the branch develop, and pull the latest changes:
+        cd ../openimis-be-product_py
+    
+    
+        git switch develop
+    git pull
+    
+    
+2. Return to the openimis-be_py directory and reinstall the updated product module in editable mode:
+
+       cd ../openimis-be_py
+   
+        pip install -e ../openimis-be-product_py
+    
+3. Clone the openimis-be-core_py repository, navigate into it, switch to develop, and pull the latest changes:
+        git clone https://github.com/HABTec/openimis-be-core_py.git
+    
+    
+        cd openimis-be-core_py
+    
+        git switch develop
+    
+        git pull
+    
+        cd ..
+    
+4. Clone the openimis-be-individual_py repository outside the openimis-be_py file, switch to the branch develop, and pull the latest changes:
+        git clone https://github.com/HABTec/openimis-be-individual_py.git
+    
+        cd openimis-be-individual_py
+    
+        git switch develop
+    
+        git pull
+    
+        cd ..
+    
+
+5. Now go into the openimis-be_py/openIMIS directory, apply the migrations, and run the server:
+        cd openimis-be_py/openIMIS
+    
+        python manage.py migrate
+    
+        python manage.py runserver
