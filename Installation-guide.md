@@ -165,3 +165,19 @@ Once uninstalled, move to the openimis-be-product_py directory, switch to the br
         python manage.py migrate
     
         python manage.py runserver
+
+# Guide to using script.sh file to install and pull changes from HABTec/openimis
+
+1. Download the script.sh file locally. If you have already installed openimis place the script.sh file outside the openimis-be_py file
+
+2. Make sure that you are on Ubuntu Debian.
+
+3. Install python3.10 and docker on your PC.
+
+4. Run the script using:
+
+        source script.sh
+
+5. To install openimis from scratch press 1 and proceed
+
+6. To pull new changes from the main branch press 2 and proceed
