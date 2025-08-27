@@ -171,10 +171,6 @@
         {
             "name": "api_etl",
             "pip": "git+https://github.com/habtec/openimis-be-api_etl_py.git@develop#egg=openimis-be-api_etl"
-        },
-        {
-            "name": "membership",
-            "pip": "git+https://github.com/HABTec/openimis-be-membership@main#egg=openimis-be-membership"
         }
     ]
 }
