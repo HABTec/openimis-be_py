@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo " 1. Clone all the repositories from scratch and Install openimis." 
 echo -e "\e[33mWARNING: If you have previously installed openIMIS before please clear the Docker containers!!\e[0m"
 echo 
