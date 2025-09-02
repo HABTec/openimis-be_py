@@ -3,7 +3,7 @@ version: "3.7"
 services:
   db:
     container_name: ${PROJECT_NAME:-openimis}-db
-    image: ghcr.io/openimis/openimis-pgsql:${DB_TAG:-develop}
+    image: ghcr.io/habtec/openimis-pgsql:${DB_TAG:-develop}
     environment:
       - POSTGRES_PASSWORD=$PSQL_DB_PASSWORD
       - POSTGRES_DB=$PSQL_DB_NAME
