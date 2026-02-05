@@ -41,7 +41,7 @@ SCHEDULER_JOBS = [
     "method": "claim.tasks.Claim_ETL",
     "args": ["interval"],
     "kwargs": {"id": "claim_etl",
-                "hours": 5,
+                "hours": 6,
                 "replace_existing": True},
     },
 ]
