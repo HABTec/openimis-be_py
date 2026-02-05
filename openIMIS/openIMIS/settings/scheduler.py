@@ -34,14 +34,14 @@ SCHEDULER_JOBS = [
     "method": "insuree.tasks.Enrollment_etl",
     "args": ["interval"],
     "kwargs": {"id": "enrollment_etl",
-                "seconds": 5,
+                "hours": 6,
                 "replace_existing": True},
     },
     {
     "method": "claim.tasks.Claim_ETL",
     "args": ["interval"],
     "kwargs": {"id": "claim_etl",
-                "seconds": 5,
+                "hours": 5,
                 "replace_existing": True},
     },
 ]
