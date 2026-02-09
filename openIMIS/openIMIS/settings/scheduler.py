@@ -30,6 +30,20 @@ SCHEDULER_JOBS = [
     #                "minute", 30
     #                "replace_existing": True},
     # },
+    {
+    "method": "insuree.tasks.Enrollment_etl",
+    "args": ["interval"],
+    "kwargs": {"id": "enrollment_etl",
+                "hours": 6,
+                "replace_existing": True},
+    },
+    {
+    "method": "claim.tasks.Claim_ETL",
+    "args": ["interval"],
+    "kwargs": {"id": "claim_etl",
+                "hours": 6,
+                "replace_existing": True},
+    },
 ]
 # This one is called directly with the scheduler object as first parameter. The methods can schedule things on their own
 SCHEDULER_CUSTOM = [
